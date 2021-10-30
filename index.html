@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.png" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/extended.css">
+  <title>MOMENTUM</title>
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <div class="wrapper">
+      <div class="parallax-img"></div>
+      <header class="header">
+        <div class="player">
+          <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+          <ul class="play-list">
+            <li>
+              <div id="breathe-btn" class="play-item-icon"></div>
+              <a id="breathe" href="#" class="play-item">Breathe</a>
+              <div class="visualizer">
+                <div class="visualizer-first-column"></div>
+                <div class="visualizer-second-column"></div>
+                <div class="visualizer-third-column"></div>
+              </div>
+            </li>
+            <li>
+              <div id="memories-btn" class="play-item-icon"></div>
+              <a id="memories" href="#" class="play-item">Childhood</a>
+              <div class="visualizer">
+                <div class="visualizer-first-column"></div>
+                <div class="visualizer-second-column"></div>
+                <div class="visualizer-third-column"></div>
+              </div>
+            </li>
+            <li>
+              <div id="solace-btn" class="play-item-icon"></div>
+              <a id="solace" href="#" class="play-item">Solace</a>
+              <div class="visualizer">
+                <div class="visualizer-first-column"></div>
+                <div class="visualizer-second-column"></div>
+                <div class="visualizer-third-column"></div>
+              </div>
+            </li>
+            <li>
+              <div id="solitude-btn" class="play-item-icon"></div>
+              <a id="solitude" href="#" class="play-item">Solitude</a>
+              <div class="visualizer">
+                <div class="visualizer-first-column"></div>
+                <div class="visualizer-second-column"></div>
+                <div class="visualizer-third-column"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="weather">
+          <input type="text" class="city" value="Minsk" placeholder="Your city">
+          <i class="weather-icon owf "></i>
+          <div class="weather-error"></div>
+          <div class="description-container">
+            <span class="temperature"></span>
+            <span class="weather-description"></span>
+          </div>
+          <div class="wind"></div>
+          <div class="humidity"></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="slider-icons">
+          <button class="slide-prev slider-icon"></button>
+          <button class="slide-next slider-icon"></button>
+        </div>
+        <time class="time"></time>
+        <date class="date"></date>
+        <div class="greeting-container">
+          <span class="greeting"></span>
+          <input type="text" class="name" placeholder="[Enter your name]">
+        </div>
+      </main>
+      <footer class="footer">
+        <button class="change-quote"></button>
+        <div>
+          <div class="quote-block">
+            <div class="quote">
+  
+            </div>
+            <div class="quote-line">
+  
+            </div>
+          </div>
+          <div class="author"></div>
+        </div>
+  
+        <div class="settings">
+          <i class="fal fa-cog setting-btn"></i>
+          <div>
+            <i class="fal fa-globe lang-btn"></i>
+            <div class="lang-list">
+              <div class="english">EN</div>
+              <div class="lang-list-line"></div>
+              <div class="russian">RU</div>
+            </div>
+          </div>
+          <a href="https://github.com/na1led" class="gh-btn">
+            <img src="assets/img/github-icon.png" alt="github">
+          </a>
+          <div class="player-btn"><i class="fal fa-play-circle player-btn-icon"></i></div>
+          <div class="weather-btn"><i class="fal fa-thunderstorm-sun weather-btn-icon"></i></div>
+        </div>
+      </footer>
+    </div>
+    
+    <div class="extended">
+      <div class="container extended-container">
+        <div class="extended-player">
+          <div class="extended-preview-block">
+            <div class="extended-player-preview extended-preview-breathe">
+              <i class="fal fa-compact-disc extended-record-icon"></i>
+            </div>
+          </div>
+          <div class="extended-player-track">
+            <h2 class="extended-player-title"></h2>
+            <h3 class="extended-player-artist"></h3>
+            <h4 class="extended-player-duration"></h4>
+          </div>
+  
+          <div class="extended-player-controls">
+            <div class="extended-prev-block">
+              <i class="fal fa-forward extended-prev-icon"></i>
+            </div>
+            <div class="extended-play-block">
+              <i class="fal fa-play extended-play-icon"></i>
+            </div>
+            <div class="extended-next-block">
+              <i class="fal fa-forward extended-next-icon"></i>
+            </div>
+  
+          </div>
+  
+          <div class="extended-player-timeline">
+            <input type="range" value="0" class="extended-player-input">
+            <div>
+              <h4 class="extended-player-duration"></h4>
+              <h4 class="extended-player-line">/</h4>
+              <h4 class="extended-player-currenttime">0:00</h4>
+            </div>
+          </div>
+          <div class="extended-volume-controls">
+            <div class="extended-volume-btn">
+              <i class="fal fa-volume extended-volume-icon"></i>
+            </div>
+            <input type="range" class="extended-volume-input">
+          </div>
+          <div class="extended-player-visualizer">
+            <div class="extended-visualizer-col1"></div>
+            <div class="extended-visualizer-col2"></div>
+            <div class="extended-visualizer-col3"></div>
+            <div class="extended-visualizer-col4"></div>
+            <div class="extended-visualizer-col5"></div>
+            <div class="extended-visualizer-col6"></div>
+            <div class="extended-visualizer-col7"></div>
+          </div>
+        </div>
+        <div class="extended-playlist">
+          <div class="extended-breathe-track extended-card-active" id="breathe-card">
+            <img src="assets/img/breathe.webp" alt="">
+            <div class="extended-playlist-descr">
+              <div>
+                <h3 class="extended-playlist-title">Breathe</h3>
+                <h4 class="extended-playlist-artist">mell-ø</h4>
+              </div>
+              <h5 class="extended-playlist-duration">2:07</h5>
+            </div>
+          </div>
+          <div class="extended-childhood-track" id="childhood-card">
+            <img src="assets/img/childhood.webp" alt="">
+            <div class="extended-playlist-descr">
+              <div>
+                <h3 class="extended-playlist-title">Childhood</h3>
+                <h4 class="extended-playlist-artist">mell-ø</h4>
+              </div>
+              <h5 class="extended-playlist-duration">1:40</h5>
+            </div>
+  
+          </div>
+          <div class="extended-solace-track" id="solace-card">
+            <img src="assets/img/solace.webp" alt="">
+            <div class="extended-playlist-descr">
+              <div>
+                <h3 class="extended-playlist-title">Solace</h3>
+                <h4 class="extended-playlist-artist">mell-ø</h4>
+              </div>
+              <h5 class="extended-playlist-duration">1:45</h5>
+            </div>
+  
+          </div>
+          <div class="extended-solitude-track" id="solitude-card">
+            <img src="assets/img/solitude.webp" alt="">
+            <div class="extended-playlist-descr">
+              <div>
+                <h3 class="extended-playlist-title">Solitude</h3>
+                <h4 class="extended-playlist-artist">mell-ø</h4>
+              </div>
+              <h5 class="extended-playlist-duration">1:28</h5>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <div class="btn-gid">
+    <i class="fal fa-arrow-alt-up arrow-up"></i>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

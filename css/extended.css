@@ -1,0 +1,514 @@
+.extended {
+    background: rgb(221, 221, 221);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 75px;
+}
+
+.extended-container {
+    padding: 50px;
+    background: #e0e0e0;
+    height: 60vh;
+    border-radius: 30px;
+    box-shadow: inset 6px 6px 12px #bebebe,
+        inset -6px -6px 12px #ffffff;
+}
+
+.extended-player{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.extended-player-controls {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.extended-play-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 6px 6px 12px #bebebe,
+        -6px -6px 12px #ffffff;
+    cursor: pointer;
+    animation: btnUnpress 0.05s;
+    user-select: none;
+    transition: 0.05s;
+}
+
+.extended-play-icon {
+    color: rgb(136, 136, 136);
+    font-size: 30px;
+    margin-right: -4px;
+    transition: 0.1s;
+}
+
+.extended-prev-icon {
+    color: rgb(136, 136, 136);
+    transform: rotate(180deg);
+}
+
+.extended-next-icon {
+    color: rgb(136, 136, 136);
+}
+
+.extended-prev-block,
+.extended-next-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 6px 6px 12px #bebebe,
+        -6px -6px 12px #ffffff;
+    animation: btnUnpress 0.05s;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.05s;
+}
+
+
+
+.extended-player-input,
+.extended-volume-input {
+    height: 8px;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.extended-player-input{
+    width: 400px;
+    background: linear-gradient(to right, #3531ad 0%, #3531ad 0%, #3531ad 0%, #fff 0%, #fff 100%);
+
+}
+.extended-volume-input{
+    background: linear-gradient(to right, #3531ad 50%, #3531ad 50%, #3531ad 0%, #fff 0%, #fff 50%);
+
+}
+
+.extended-player-timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.extended-player-timeline div{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+}
+.extended-player-line{
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    margin: 0 4px;
+}
+.extended-player-currenttime{
+    font-family: 'Gilroy';
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+}
+
+.extended-player-input::-webkit-slider-thumb,
+.extended-volume-input::-webkit-slider-thumb {
+    color: #ffffff;
+    background: #ffffff;
+    border: 2px rgb(245, 245, 245) solid;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+@keyframes btnPress {
+    0% {
+        box-shadow: 6px 6px 12px #bebebe,
+            -6px -6px 12px #ffffff;
+    }
+
+    50% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: inset 6px 6px 12px #bebebe,
+            inset -6px -6px 12px #ffffff;
+    }
+}
+
+@keyframes btnUnpress {
+    0% {
+        box-shadow: inset 6px 6px 12px #bebebe,
+            inset -6px -6px 12px #ffffff;
+
+    }
+
+    50% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: 6px 6px 12px #bebebe,
+            -6px -6px 12px #ffffff;
+    }
+}
+.extended-preview-block{
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px #bebebe,
+            -6px -6px 12px #ffffff;
+
+}
+.extended-player-preview{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transform: none;
+    transition: 0.2s;
+}
+.player-preview-active{
+    animation: previewRotate 6s linear infinite;
+}
+.extended-record-icon{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 60px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.extended-preview-breathe{
+    background-image: url('../assets/img/breathe.webp');
+}
+.extended-preview-childhood{
+    background-image: url('../assets/img/childhood.webp');
+}
+.extended-preview-solace{
+    background-image: url('../assets/img/solace.webp');
+}
+.extended-preview-solitude{
+    background-image: url('../assets/img/solitude.webp');
+}
+
+@keyframes previewRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.extended-volume-controls{
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+.extended-volume-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 30px;
+    box-shadow: 6px 6px 12px #bebebe,
+            -6px -6px 12px #ffffff;
+    animation: btnUnpress 0.05s;
+    cursor: pointer;
+    transition: 0.05s;
+}
+.extended-btn-active {
+    animation: btnPress 0.05s;
+    box-shadow: inset 6px 6px 12px #bebebe,
+        inset -6px -6px 12px #ffffff;
+}
+
+.extended-btn-active i{
+    transform: scale(0.9);
+}
+.extended-prev-block.extended-btn-active i{
+    transform: scale(0.9) rotate(180deg);
+}
+.extended-volume-icon{
+    font-size: 23px;
+    color: rgb(136, 136, 136);
+    
+}
+.extended-volume-mute-icon{
+    font-size: 23px;
+    color: rgb(136, 136, 136);
+}
+
+.extended-player-track{
+    width: 200px;
+    height: 110px;
+    padding: 13px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.extended-player-title{
+    font-family: 'Gilroy';
+    font-size: 30px;
+    color: rgb(92, 92, 92);
+    line-height: 30px;
+}
+.extended-player-artist{
+    font-family: 'Gilroy';
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+    margin-bottom: 3px;
+}
+.extended-player-duration{
+    font-family: 'Gilroy';
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+
+}
+.extended-play-icon{
+    margin-right: 0px;
+}
+
+.extended-player-visualizer{
+    width: 200px;
+    height: 110px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    column-gap: 12px;
+    padding: 15px;
+    border-radius: 10px;
+
+    box-shadow: inset 3px 3px 9px #ffffff,
+    inset -3px -3px 9px #bebebe;
+    transform: rotate(180deg);
+}
+.extended-player-visualizer div{
+    height: 100%;
+    
+    border-radius: 10px;
+    transition: 0.3s;
+    
+}
+
+.extended-visualizer-col1.extended-col-active{
+    background: linear-gradient(145deg,#e6e6e6, #f3f3f3 );
+    animation: col1Animation 1.2s linear infinite;
+    box-shadow: 3px 3px 9px #ffffff,
+        -3px -3px 9px #bebebe;
+}
+.extended-visualizer-col2.extended-col-active{
+    background: linear-gradient(145deg,#e6e6e6, #f3f3f3 );
+    animation: col2Animation 1.7s linear infinite;
+    box-shadow: 3px 3px 9px #ffffff,
+        -3px -3px 9px #bebebe;
+}
+.extended-visualizer-col3.extended-col-active{
+    background: linear-gradient(145deg,#e6e6e6, #f3f3f3 );
+    animation: col3Animation 1.5s linear infinite;
+    box-shadow: 3px 3px 9px #ffffff,
+        -3px -3px 9px #bebebe;
+}
+.extended-visualizer-col4.extended-col-active{
+    background: linear-gradient(145deg,#e6e6e6, #f3f3f3 );
+    animation: col4Animation 1.4s linear infinite;
+    box-shadow: 3px 3px 9px #ffffff,
+        -3px -3px 9px #bebebe;
+}
+.extended-visualizer-col5.extended-col-active{
+    background: linear-gradient(145deg,#e6e6e6, #f3f3f3 );
+    animation: col5Animation 1.6s linear infinite;
+    box-shadow: 3px 3px 9px #ffffff,
+        -3px -3px 9px #bebebe;
+}
+.extended-visualizer-col6.extended-col-active{
+    background: linear-gradient(145deg,#e6e6e6, #f3f3f3 );
+    animation: col6Animation 1.3s linear infinite;
+    box-shadow: 3px 3px 9px #ffffff,
+        -3px -3px 9px #bebebe;
+}
+.extended-visualizer-col7.extended-col-active{
+    background: linear-gradient(145deg,#e6e6e6, #f3f3f3 );
+    animation: col7Animation 1.2s linear infinite;
+    box-shadow: 3px 3px 9px #ffffff,
+        -3px -3px 9px #bebebe;
+}
+
+@keyframes col1Animation {
+    0%{
+        height: 100%;
+        
+    }
+    60%{
+        height: 33%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes col2Animation {
+    0%{
+        height: 100%;
+    }
+    60%{
+        height: 28%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes col3Animation {
+    0%{
+        height: 100%;
+    }
+    60%{
+        height: 32%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes col4Animation {
+    0%{
+        height: 100%;
+    }
+    60%{
+        height: 25%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes col5Animation {
+    0%{
+        height: 100%;
+    }
+    60%{
+        height: 27%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes col6Animation {
+    0%{
+        height: 100%;
+    }
+    60%{
+        height: 35%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes col7Animation {
+    0%{
+        height: 100%;
+    }
+    60%{
+        height: 32%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+
+.extended-playlist{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.extended-breathe-track,
+.extended-childhood-track,
+.extended-solace-track,
+.extended-solitude-track{
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: none;
+    transform: scale(1);
+    transition: 0.3s;
+    animation: cardUnpress 0.2s;
+    cursor: pointer;
+    user-select: none;
+}
+.extended-playlist div img{
+    max-width: 320px;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+.extended-playlist-descr{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.extended-playlist-descr div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.extended-playlist-title{
+    font-family: 'Gilroy';
+    font-size: 25px;
+    color: rgb(92, 92, 92);
+    line-height: 30px;
+}
+.extended-playlist-artist{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    color: rgb(92, 92, 92);
+
+}
+.extended-playlist-duration{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    color: rgb(92, 92, 92);
+
+}
+
+.extended-card-active{
+    animation: cardPress 0.2s;
+    box-shadow: inset 6px 6px 12px #bebebe,
+            inset -6px -6px 12px #ffffff;
+    transform: scale(0.98);
+}
+
+@keyframes cardPress{
+    0%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: inset 6px 6px 12px #bebebe,
+            inset -6px -6px 12px #ffffff;
+    }
+}
+@keyframes cardUnpress{
+    0%{
+        box-shadow: inset 6px 6px 12px #bebebe,
+            inset -6px -6px 12px #ffffff;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
