@@ -1,4 +1,3 @@
-Hi everyone, this is my own restyle of app "Momentum"
-Also i totally remade extended audio player,
-and added some features
+Hi everyone, this is my own remake of app "Momentum"
+I totally remade style and added some features: Extended audio player,parallax,settings.
 https://na1led.github.io/momentum/
