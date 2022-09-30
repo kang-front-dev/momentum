@@ -205,11 +205,12 @@ function backgroundChange(num) {
             dayState = 'night'
         }
         let randomNum = generateRandomNum(minNum, maxNum)
-        background.style.backgroundImage = `url('https://raw.githubusercontent.com/na1led/stage1-tasks/assets/images/${dayState}/${randomNum}.jpg')`
+        background.style.backgroundImage = `url('assets/img/${dayState}/${randomNum}.jpg')`
         backgroundCount = randomNum
     } else {
-        background.style.backgroundImage = `url('https://raw.githubusercontent.com/na1led/stage1-tasks/assets/images/${dayState}/${num}.jpg')`
+        background.style.backgroundImage = `url('assets/img/${dayState}/${num}.jpg')`
     }
+
 
 }
 
