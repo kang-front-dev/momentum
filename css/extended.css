@@ -9,7 +9,7 @@
 .extended-container {
     padding: 50px;
     background: #e0e0e0;
-    height: 60vh;
+
     border-radius: 30px;
     box-shadow: inset 6px 6px 12px #bebebe,
         inset -6px -6px 12px #ffffff;
@@ -434,7 +434,7 @@
 
 
 .extended-playlist{
-    padding: 50px 0;
+    padding: 50px 0 0;
     display: flex;
     justify-content: space-between;
 
